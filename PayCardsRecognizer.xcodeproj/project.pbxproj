@@ -779,6 +779,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -982,7 +983,9 @@
 		8540F32D1F28AA5300B16170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
 				COPY_PHASE_STRIP = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -991,9 +994,10 @@
 					CPU_ONLY,
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/PayCardsRecognizer/include/Eigen",
 					"$(PROJECT_DIR)/PayCardsRecognizer/include",
+					"$(PROJECT_DIR)/PayCardsRecognizer/include/Eigen",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1003,16 +1007,19 @@
 		8540F32E1F28AA5300B16170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
 				COPY_PHASE_STRIP = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					USE_EIGEN,
 					CPU_ONLY,
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/PayCardsRecognizer/include/Eigen",
 					"$(PROJECT_DIR)/PayCardsRecognizer/include",
+					"$(PROJECT_DIR)/PayCardsRecognizer/include/Eigen",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1038,6 +1045,7 @@
 				8540F32E1F28AA5300B16170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
